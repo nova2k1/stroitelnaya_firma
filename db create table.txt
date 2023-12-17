@@ -1,0 +1,163 @@
+CREATE TABLE "Firm"(
+	id INTEGER PRIMARY KEY UNIQUE,
+	Company_name VARCHAR(100)NOT NULL,
+	Legal_address VARCHAR(100) NOT NULL,
+	Contact_information int NOT NULL,
+	Company_logo int NOT NULL
+)
+
+CREATE TABLE "Gen.Director" (
+	id INTEGER PRIMARY KEY UNIQUE,
+	FIO VARCHAR(100) NOT NULL,
+	phone number VARCHAR(20) NOT NULL,
+	adress VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE meneger (
+  	id INTEGER PRIMARY KEY UNIQUE,
+  	price_apartment FLOAT,
+  	number_apartment INT NOT NULL,
+  	drafting_contracts INT NOT NULL
+);
+
+CREATE TABLE Client (
+	id INTEGER PRIMARY KEY UNIQUE,
+	passport_number INT NOT NULL,
+	FIO VARCHAR(100) NOT NULL,
+	phone_number VARCHAR(100) NOT NULL,
+	address VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Employee (
+	Employee_ID INT PRIMARY KEY,
+	FIO VARCHAR(100) NOT NULL,
+	post VARCHAR(100) NOT NULL,
+	number_phone VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Project (
+	Project_ID INT PRIMARY KEY UNIQUE,
+	name VARCHAR(100) NOT NULL,
+	Start_Date DATE NOT NULL,
+	end_date DATE NOT NULL,
+	budget INT NOT NULL
+);
+
+CREATE TABLE Customers (
+	id INTEGER PRIMARY KEY UNIQUE,
+	Company_name VARCHAR(100)NOT NULL,
+	contact_information VARCHAR(100) NOT NULL,
+	Order_history VARCHAR(100) NOT NULL,
+	cost INTEGER NOT NULL
+
+);
+
+CREATE TABLE Suppliers (
+	id INT PRIMARY KEY UNIQUE,
+	Company_nameSUP VARCHAR(100) NOT NULL,
+	OrderID INT NOT NULL,
+	Company_name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Construction_workers (
+	id INT PRIMARY KEY UNIQUE,
+	EmployeeID INT NOT NULL,
+	TaskID INT NOT NULL
+);
+
+CREATE TABLE Task (
+	id INT PRIMARY KEY UNIQUE,
+	TaskID INT NOT NULL,
+	Task_name VARCHAR(100) NOT NULL,
+	Task_description TEXT,
+	Due_date DATE,
+	Cost INT NOT NULL
+);
+
+CREATE TABLE "Order"(
+	id INT PRIMARY KEY UNIQUE,
+	OrderID INT NOT NULL,
+	Order_number VARCHAR(100) NOT NULL,
+	Client VARCHAR(100) NOT NULL,
+	Employee VARCHAR(100) NOT NULL
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
